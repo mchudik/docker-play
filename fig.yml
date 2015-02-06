@@ -1,0 +1,10 @@
+play:
+  image: mchudik/docker-play
+  ports:
+    - "9000:9000"
+    - "9999:9999"
+    - "8888:8888"
+  volumes:
+    - "/home/mchudik/Code:/home/play/Code"
+  entrypoint:
+    - "/bin/bash"
